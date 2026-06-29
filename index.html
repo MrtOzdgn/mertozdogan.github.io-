@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mert Özdoğan — Photography</title>
+  <meta name="description" content="Photography portfolio of Mert Özdoğan — street, documentary, landscape and equestrian work." />
+
+  <!-- Open Graph (nice link previews when shared) -->
+  <meta property="og:title" content="Mert Özdoğan — Photography" />
+  <meta property="og:description" content="Street, documentary, landscape & equestrian photography." />
+  <meta property="og:image" content="images/large/01-ginger-cat-istanbul.jpg" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="top">
+    <a class="brand" href="#top">Mert&nbsp;Özdoğan</a>
+    <nav class="nav">
+      <a href="#street">Street</a>
+      <a href="#landscape">Landscape</a>
+      <a href="#equestrian">Equestrian</a>
+      <a href="#contact" class="nav-contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ===== Hero (rank 01 — strongest image) ===== -->
+  <section class="hero">
+    <img src="images/large/01-ginger-cat-istanbul.jpg" alt="A ginger cat resting on a brick wall on an Istanbul street" />
+    <div class="hero-overlay">
+      <h1>Mert Özdoğan</h1>
+      <p class="hero-sub">Street &middot; Documentary &middot; Landscape</p>
+    </div>
+    <a class="scroll-cue" href="#street" aria-label="Scroll to work">↓</a>
+  </section>
+
+  <main>
+
+    <!-- ===== Street / Documentary ===== -->
+    <section class="gallery-section" id="street">
+      <div class="section-head">
+        <h2>Street &amp; Documentary</h2>
+        <p>Quiet moments and city light, mostly from Istanbul.</p>
+      </div>
+      <div class="masonry">
+        <figure class="shot"><img src="images/thumbs/04-man-on-bench-bw.jpg" data-full="images/large/04-man-on-bench-bw.jpg" width="1466" height="2200" loading="lazy" alt="Black-and-white photograph of a man checking his phone on a city bench" /></figure>
+        <figure class="shot"><img src="images/thumbs/05-bluehour-highway-skyline.jpg" data-full="images/large/05-bluehour-highway-skyline.jpg" width="2200" height="1466" loading="lazy" alt="A highway at blue hour with curving streetlights and a glowing skyline" /></figure>
+        <figure class="shot"><img src="images/thumbs/06-night-motorcyclist.jpg" data-full="images/large/06-night-motorcyclist.jpg" width="2200" height="1238" loading="lazy" alt="A motorcyclist lit by a streetlamp at night in an empty plaza" /></figure>
+        <figure class="shot"><img src="images/thumbs/07-highway-sunset-overpass.jpg" data-full="images/large/07-highway-sunset-overpass.jpg" width="2200" height="1238" loading="lazy" alt="A city highway at sunset framed through the gap of an overpass" /></figure>
+        <figure class="shot"><img src="images/thumbs/08-fishermen-galata-bridge.jpg" data-full="images/large/08-fishermen-galata-bridge.jpg" width="2200" height="1466" loading="lazy" alt="Fishermen lined along the Galata Bridge, rods extended, Galata Tower beyond" /></figure>
+      </div>
+    </section>
+
+    <!-- ===== Landscape ===== -->
+    <section class="gallery-section" id="landscape">
+      <div class="section-head">
+        <h2>Landscape</h2>
+        <p>Light, weather and stillness.</p>
+      </div>
+      <div class="masonry">
+        <figure class="shot"><img src="images/thumbs/02-stormy-beach-mountains.jpg" data-full="images/large/02-stormy-beach-mountains.jpg" width="2200" height="1466" loading="lazy" alt="Storm clouds gathering over mountains and a wave-lapped beach" /></figure>
+        <figure class="shot"><img src="images/thumbs/03-golden-sunset-rocks.jpg" data-full="images/large/03-golden-sunset-rocks.jpg" width="2200" height="1466" loading="lazy" alt="Smooth stones in still water catching a golden sunset reflection" /></figure>
+      </div>
+    </section>
+
+    <!-- ===== Equestrian / Sport ===== -->
+    <section class="gallery-section" id="equestrian">
+      <div class="section-head">
+        <h2>Equestrian &amp; Sport</h2>
+        <p>Speed, tension and the moment before the line.</p>
+      </div>
+      <div class="masonry">
+        <figure class="shot"><img src="images/thumbs/09-racehorse-red-jockey.jpg" data-full="images/large/09-racehorse-red-jockey.jpg" width="1466" height="2200" loading="lazy" alt="A jockey in red riding a brown racehorse at full gallop, city skyline behind" /></figure>
+        <figure class="shot"><img src="images/thumbs/10-grey-racehorse-hood.jpg" data-full="images/large/10-grey-racehorse-hood.jpg" width="2200" height="1466" loading="lazy" alt="Close-up of a grey racehorse in a red-and-yellow hood before a race" /></figure>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Contact / Footer ===== -->
+  <footer class="contact" id="contact">
+    <h2>Get in touch</h2>
+    <p>Available for commissions and prints.</p>
+    <a class="email" href="mailto:mert.ismk@gmail.com">mert.ismk@gmail.com</a>
+    <p class="copyright">© <span id="year"></span> Mert Özdoğan. All rights reserved.</p>
+  </footer>
+
+  <!-- ===== Lightbox ===== -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-close" aria-label="Close">×</button>
+    <button class="lb-prev" aria-label="Previous">‹</button>
+    <img class="lb-img" src="" alt="" />
+    <button class="lb-next" aria-label="Next">›</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
