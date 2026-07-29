@@ -61,49 +61,11 @@ img { display: block; max-width: 100%; }
 }
 .nav a:hover { background: #efe8d8; color: var(--ink); }
 
-/* ===== Hero ===== */
-.hero {
-  position: relative;
-  height: 68vh;
-  min-height: 380px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: radial-gradient(120% 85% at 50% 0%, #fbf8f1 0%, var(--bg) 62%);
-}
-.hero-overlay {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.hero-overlay h1 {
-  font-family: "Fraunces", serif;
-  font-weight: 600;
-  font-size: clamp(2.6rem, 8vw, 5.6rem);
-  letter-spacing: -.02em;
-  line-height: 1;
-}
-.scroll-cue {
-  position: absolute;
-  bottom: 28px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: var(--muted);
-  text-decoration: none;
-  font-size: 1.5rem;
-  opacity: .8;
-  animation: bob 2s ease-in-out infinite;
-}
-@keyframes bob { 0%,100%{transform:translate(-50%,0)} 50%{transform:translate(-50%,8px)} }
-
 /* ===== Gallery ===== */
 .gallery-section {
   max-width: var(--max);
   margin: 0 auto;
-  padding: 50px 32px 30px;
+  padding: 110px 32px 30px;
 }
 
 /* ===== Masonry (CSS columns) of instax-style prints ===== */
@@ -146,15 +108,8 @@ img { display: block; max-width: 100%; }
   margin-top: 30px;
   border-top: 1px solid var(--line);
 }
-.contact h2 {
-  font-family: "Fraunces", serif;
-  font-weight: 600;
-  font-size: clamp(2rem, 5vw, 3rem);
-}
-.contact p { color: var(--muted); margin-top: 8px; }
 .email {
   display: inline-block;
-  margin-top: 22px;
   font-size: clamp(1.1rem, 3vw, 1.6rem);
   letter-spacing: .01em;
   color: var(--accent);
@@ -207,8 +162,8 @@ img { display: block; max-width: 100%; }
 .lb-prev { left: 6px; }
 .lb-next { right: 6px; }
 @media (max-width: 560px) {
-  .site-header { padding: 14px 18px; justify-content: center; }
-  .brand { display: none; }            /* hero already shows the name */
-  .gallery-section { padding: 44px 16px 20px; }
+  .site-header { padding: 14px 18px; }
+  .brand { font-size: 1.1rem; }
+  .gallery-section { padding: 90px 16px 20px; }
   .lb-prev, .lb-next { font-size: 2.4rem; padding: 0 10px; }
 }
