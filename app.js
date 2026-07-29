@@ -10,7 +10,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
   const btnNext = lb.querySelector(".lb-next");
 
   // Collect every gallery image in document order
-  const imgs = Array.from(document.querySelectorAll(".shot img"));
+  const imgs = Array.from(document.querySelectorAll("img.shot"));
   let index = -1;
 
   function show(i) {
